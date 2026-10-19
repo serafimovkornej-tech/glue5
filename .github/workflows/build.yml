@@ -73,7 +73,7 @@ jobs:
           yes | mise exec -- sdkmanager --licenses >/dev/null || true
           mkdir -p ~/.android
           cd ~/.android && "$GITHUB_WORKSPACE/.github/scripts/draft.sh" get "${{ steps.game.outputs.release }}" Glue5-android.keystore
-          if [ -f Glue5-android.keystore ]; then mv Glue5-android.keystore debug.keystore; fi
+          if [ -f Glue5-android.keystore ]; then mv Glue5-android.keystore debug.keystore; fi.
 
       - name: Build
         run: |
